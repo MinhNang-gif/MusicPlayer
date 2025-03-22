@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <i class="header-icon fa-solid fa-chevron-down"></i>
+                <span>
+                    <h4>Now playing:</h4>
+                    <h2>String 57th & 9th</h2>
+                </span>
+                <i class="header-icon fa-solid fa-plus"></i>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg');"></div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fas fa-pause icon-pause"></i>
+                    <i class="fas fa-play icon-play"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+
+            <!-- Current time -->
+            <div class="current-time"></div>
+
+            <!-- Range -->
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            
+            <!-- Since time -->
+            <div class="since_time">
+                <div class="start_time">0:00</div>
+                <div class="end_time"></div>
+            </div>
+
+            <!-- Audio -->
+            <audio id="audio" src=""></audio>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
+
+
